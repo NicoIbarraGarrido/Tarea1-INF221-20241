@@ -24,6 +24,7 @@ int main() {
         return 1;
     }
 
+    // Transformamos el Data Set en un vector
     vector<int> data;
     int number;
     while (infile >> number) {
@@ -31,7 +32,7 @@ int main() {
     }
     infile.close();
 
-    // Empezamos a medir el tiempo de ordenamiento del algoritmo
+    // Medimos el tiempo de ordenamiento del algoritmo
     auto start = chrono::high_resolution_clock::now();
     bubbleSort(data);
     auto end = chrono::high_resolution_clock::now();
@@ -40,6 +41,7 @@ int main() {
     chrono::duration<double> elapsed = end - start;
     cout << "Tiempo de ordenamiento: " << elapsed.count() << " segundos." << endl;
 
+    // Creamos el archivo para mostrar el resultado del ordenamiento
     ofstream outfile("Resultado.txt");
     if (!outfile) {
         cerr << "No se pudo crear el archivo resultado.txt" << endl;
