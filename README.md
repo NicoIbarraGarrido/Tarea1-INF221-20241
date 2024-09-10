@@ -14,3 +14,4 @@ También los Data Sets utilizados para los benchmarks de los algoritmos. Estos D
 - Con repetición: el 20% de los elementos se encuentran repetidos.
 
 Todos estos Data Sets se crear con el programa Crear.cpp que se encuentra en la carpeta CrearDataSets.
+El formato de los Data Sets son archivos .txt y, además, cada algoritmo crear un nuevo archivo con el nombre Resultados.txt que contiene los elementos del Data Set ordenados.
